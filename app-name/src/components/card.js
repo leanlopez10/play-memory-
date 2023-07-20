@@ -7,6 +7,7 @@ const Card = ({ name, number, frontFace, flipCard, unflippedCards, disabledCards
   const [hasEvent, setHasEvent] = useState(true);
 
   useEffect(() => {
+    
     if (unflippedCards.includes(number)) {
       setTimeout(() => setIsFlipped(false), 700);
     }
